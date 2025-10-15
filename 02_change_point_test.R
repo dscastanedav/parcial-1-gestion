@@ -7,7 +7,7 @@
 # puedes especificar manualmente la ruta a tu carpeta de librerías personal.
 # Descomenta y edita la siguiente línea según tu usuario y versión de R:
 # .libPaths("C:/Users/tu_usuario/AppData/Local/R/win-library/4.x")
-
+.libPaths("C:/Users/santi/AppData/Local/R/win-library/4.5")
 library(readr); library(dplyr); library(ggplot2); library(strucchange)
 
 inc <- read_csv("incidents.csv") %>%
@@ -17,7 +17,7 @@ inc <- read_csv("incidents.csv") %>%
 
 # Fit simple linear model
 fm <- lm(incidents ~ year, data = inc)
-bp <- breakpoints(incidents ~ year, data = inc)
+bp <- breakpoints(incidents ~ year, data = inc, h = 3)
 
 png("outputs/figures/02_changepoint.png", width = 800, height = 500)
 plot(bp)

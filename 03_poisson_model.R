@@ -7,7 +7,6 @@
 # puedes especificar manualmente la ruta a tu carpeta de librerías personal.
 # Descomenta y edita la siguiente línea según tu usuario y versión de R:
 # .libPaths("C:/Users/tu_usuario/AppData/Local/R/win-library/4.x")
-
 library(readr); library(dplyr); library(MASS)
 
 inc <- read_csv("incidents.csv")
