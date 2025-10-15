@@ -1,0 +1,9 @@
+source,target,risk,auth
+ERP,CRM,high,token
+ERP,Billing,medium,basic
+ERP,DataLake,medium,basic
+SCADA,Analytics,high,token
+CRM,Billing,high,token
+Analytics,Mobile-App,medium,token
+Supplier-API,Mobile-App,low,basic
+Mobile-App,DataLake,low,basic
