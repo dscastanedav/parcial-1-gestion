@@ -3,6 +3,11 @@
 # Structural change test before/after Zero-Trust adoption (2022)
 # Output: outputs/figures/02_changepoint.png
 
+# Si tienes problemas de permisos o R no encuentra los paquetes instalados,
+# puedes especificar manualmente la ruta a tu carpeta de librerías personal.
+# Descomenta y edita la siguiente línea según tu usuario y versión de R:
+# .libPaths("C:/Users/tu_usuario/AppData/Local/R/win-library/4.x")
+
 library(readr); library(dplyr); library(ggplot2); library(strucchange)
 
 inc <- read_csv("incidents.csv") %>%

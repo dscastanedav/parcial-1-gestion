@@ -3,6 +3,11 @@
 # API exposure network; simulate micro-segmentation by removing risky edges
 # Output: outputs/figures/05_api_graph_before_after.png
 
+# Si tienes problemas de permisos o R no encuentra los paquetes instalados,
+# puedes especificar manualmente la ruta a tu carpeta de librerías personal.
+# Descomenta y edita la siguiente línea según tu usuario y versión de R:
+# .libPaths("C:/Users/tu_usuario/AppData/Local/R/win-library/4.x")
+
 library(readr); library(dplyr); library(igraph); library(ggplot2); library(ggraph)
 
 api <- read_csv("apis_exposure.csv")
